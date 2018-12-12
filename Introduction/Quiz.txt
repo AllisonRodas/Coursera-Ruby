@@ -1,0 +1,177 @@
+POP QUIZ
+
+RUBY ON RAIL: AN INTRODUCTION
+
+**VIDEO: INTRODUCTION TO GIT**
+
+1. What is the main difference between a distributed VCS and a centralized VCS?
+   The full repository of a distributed VCS resides _______ while the repository of a centralized VCS resides _______.
+   Select the best option to fill in the banks in the correct order.
+   ASN/:: locally; on a server
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PRATICE QUIZ
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. What abbreviation is used to describe the function of Git? (Select all that apply)
+
+[ ] SSH - Secure Socket Shell
+[0] VCS - Version Control System
+[ ] HTTP - Hypertext Transfer Protocol
+[0] SCM - Source Code Management
+
+2. What are the advantages of Git being a Distributed Version Control System? (Select all that apply)
+
+[X] Git functions exactly like CVS and SVN(Subversion)
+    No. CVS and SVN are examples of Centralized Version Control Systems (where as Git is a Distributed Version Control System)
+[0] Internet connection is not required for common Git operations
+    Correct! Committing, for example, is done locally preserving the code changes and synching up between remote repositories is done when it's a good time for everyone.
+[0] Backups are trivial
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+MODULE QUIZ
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**** 1 *****
+
+1. Which of the following is/are true about git? (Select all that apply.)
+
+[] It places a hidden .git directory in every sub-directory of your source tree.
+[-] Once you have cloned one of the course example repositories from Github, you will have local access to every change that was ever pushed to that repository in Github.
+[-] Once you commit a file to your local repository, you can recover your file from Github if you lose your computer/local repository.
+[] Git uses a .gitignore file to define file/directory names and patterns that you do not want managed by Git.
+
+2. Given the Course 1, Module 2 Github repository is located at the following url - https://github.com/jhu-ep-coursera/fullstack-course1-module2 - what is the command that will obtain a local instance of the repository?
+
+[] git checkout
+[] git copy
+[] git clone
+[-] git pull origin master
+
+3. What Git properties should be set prior to checking code into your repository? (Select all that apply.)
+
+[] user.timezone
+[-] user.name
+[-] user.email
+[] user.password
+
+4. What is the default branch for a new repository?
+
+[-] master
+[] trunk
+[] github
+[] root
+
+5. Given the output of the "git status" command below, what is the state of "test.rb"?
+   
+	$ git status
+	# On branch master
+	#
+	# Initial commit
+	#
+	# Untracked files:
+	#	(use "git add ,file...." to include in
+	what will be committed)
+	#
+	#	    test.rd
+	nothing added to commit but untracked files
+	present (use "git add" to track)
+
+[] Tracked file with no changes since last commit.
+[-] Untracked file not managed by git.
+[] Tracked file just edited.
+[] Newly tracked file not yet committed.
+
+6. Given the output of the "git diff test.rb" command below, what is the state of "test.rb"?
+
+	$ git diff test.rb
+	diff --git a/test.rb b/test.rb
+	index ce01362..94954ab 100644
+	--- a/test.rb
+	+++ b/test.rb
+	@@ -1 +1,2 @@
+	hello
+	+world
+
+[-] text "world" was added
+[] text "hello" was removed
+[] text "hello" was added
+[] text "world" was removed
+
+7. Which commands will revert the change made below so that we go back to the previous checked-in state? (Select all that apply.)
+
+	$ git diff test.rb
+	diff --git a/test.rb b/test.rb
+	index ce01362..94954ab 100644
+	--- a/test.rb
+	+++ b/test.rb
+	@@ -1 +1,2 @@
+	hello
+	+world
+
+[-] git revert test.rb
+[-] git checkout .
+[-] git checkout -- test.rb
+[] git show master:test.rb
+
+8. You have accidentally deleted test.rb. Which commands will restore the file to its previous committed state? (Select all that apply.)
+
+	$ rm test.rb
+	
+	$ git status
+	# On branch master
+	# Changes not staged for commit:
+	#	(use "git add/rm <file>..." to 
+	discard changes in working directory)
+	#
+	#	deleted:	test.rb
+	#
+	no changes added to commit (use "git
+	add" and/or "git commit -a")
+
+	$ ls test.rb
+	ls: test.rb: No such file or directory
+
+[] git restore test.rb
+[] git undelete test.rb
+[-] git checkout -- test.rb
+[] git show master:test.rb
+
+9. You are told to push your master branch to https://git.repo.com/stuff.git . What is the command to add this remote url to your repository?
+
+[] git remote add repo https://git.repo.com/stuff.git
+[-] git push master https://git.repo.com/stuff.git
+[] git push remote https://git.repo.com/stuff.git
+[] git add remote repo https://git.repo.com/stuff.git
+
+10. You are told to update your master branch for the Module 2 course examples located at the following URL: https://github.com/jhu-ep-coursera/fullstack-course1-module2 . Given the state of the repository below, what is the command to update your copy of the examples?
+
+	$ git remote -v
+	origin https://github.com/jhu-ep-
+	coursera/fullstack-course1-module2
+	(fetch)
+	origin https://github.com/jhu-ep-
+	coursera/fullstack-coursera1-module2
+	(push)
+	repo2 https://foobar.com/stuff.git
+	(fetch)
+	repo2 https://footbar.com/stuff.git
+	(push)
+
+[-] git update origin master
+[] git clone https:github.com/jhu-ep-coursera/fullstack-course1-module2
+[] git pull master https://github.com/jhu-ep-coursera/fullstack-course1-module2
+[] git pull origin master
+
+11. What abbreviation is used to describe the function of Git? (Select all that apply)
+
+[] HTTP - Hypertext Transfer Protocol
+[-] SCM - Source Code Management
+[-] VCS - Version Control System
+[] SSH - Secure Socket Shell
+
+12. What are the advantages of Git being a Distributed Version Control System? (Select all that apply)
+
+[-] Backups are trivial
+[-] Internet connection is not required for common Git operations
+[] Git functions exactly like CVS and SVN(Subversion)
