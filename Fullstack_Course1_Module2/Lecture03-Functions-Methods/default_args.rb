@@ -10,4 +10,10 @@ puts factorial 5 # => 120
 puts factorial_with_default # => 120 
 puts factorial_with_default(3) # => 6
 
+#New code by Allison
+p "---New code by Allison---"
+
+puts factorial 50
+puts factorial_with_default
+puts factorial_with_default(8)
  
