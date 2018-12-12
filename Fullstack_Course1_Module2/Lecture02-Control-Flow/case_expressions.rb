@@ -18,3 +18,21 @@ end
 
 #=> Something is fishy here
 
+#New code by Allison
+p "---New code by Allison---"
+
+altitude = 2000 # msnm
+case # 1ST FLAVOR
+	when altitude >= 300
+		puts "You are doing altitude diving!!!"
+	when altitude < 300
+		puts "Enjoy your dive. Do not forget your partner"
+	else
+		puts "Hey Hey... Time to dive"
+end
+
+dive_type = 'Night diving'
+case dive_type # 2nd flavor
+	when /Nig/i then puts "Don't forget your lamp"
+	when 'Vision' then puts "You need different equipment"
+end 

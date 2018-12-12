@@ -18,3 +18,20 @@ end
 
 # => a is not 6
 
+
+# New code by Allison
+
+age = 70
+if  age >= 60 and  age <=69                  
+  puts "You're in your 60's"                  
+elsif age >= 50 and age <=59
+  puts "You're in your 50's"                   
+else                              
+  puts "You are under 50 or beyond 60"
+end 
+
+k = 5*5
+
+unless k == 26
+  puts "k is not a 5 multiple"
+end
